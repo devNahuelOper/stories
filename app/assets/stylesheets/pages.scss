@@ -2,6 +2,71 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.menu {
+  // background-color: #000;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  // width: 240px;
+  z-index: 1;
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  // li {
+  //   a {
+  //     color: #fff;
+  //     display: block;
+  //     font-size: 18px;
+  //     font-weight: 100;
+  //     padding: 30px 40px;
+  //     text-decoration: none;
+  //   }
+  // }
+  .icon-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+}
+
+#sidr {
+  ul {
+    border: unset;
+  }
+  li {
+    line-height: unset;
+    border: none;
+    &:hover {
+      border-top: 1px solid #4d4d4d;
+      border-bottom: 1px solid #1a1a1a;
+      + li {
+        border-top: 1px solid #4d4d4d;
+        border-bottom: 1px solid #1a1a1a;
+      }
+    }
+    a {
+      color: #fff;
+      display: block;
+      font-size: 18px;
+      font-weight: 100;
+      padding: 30px 40px;
+      text-decoration: none;
+    }
+  }
+}
+
+.icon-menu {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+
 .home-main {
   background-image: url("bwheadshot.jpg");
   background-position: center;
@@ -45,7 +110,8 @@
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
 }
 
-.home-supporting, .home-about {
+.home-supporting,
+.home-about {
   padding: 80px 0;
   text-align: center;
   h2 {
@@ -64,7 +130,7 @@
   background-image: url("cuba.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-   &:hover {
+  &:hover {
     background-image: url("cuba1.jpg");
     // transition: 1s;
   }
@@ -72,7 +138,7 @@
 
 .footer {
   background-color: #f9f9f9;
-  border-top: solid 1px #F5F5F5;
+  border-top: solid 1px #f5f5f5;
   padding: 40px 0 30px 0;
   text-align: center;
   p {
