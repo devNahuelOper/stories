@@ -28,7 +28,8 @@
           <%= link_to "Home", :root %>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <%# <a href="#">Contact</a> %>
+          <%= link_to "Contact".html_safe, "/signups/new" %>
         </li>
       </ul>
       <img alt="Close" class="icon-close" src="https://content.codecademy.com/projects/z2d/stories/close-white.svg" width="24px"/>
