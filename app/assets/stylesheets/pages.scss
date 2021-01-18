@@ -60,11 +60,10 @@
 }
 
 .icon-menu {
-  position: absolute;
+  position: fixed;
   top: 30px;
   left: 30px;
   cursor: pointer;
-  z-index: 2;
 }
 
 .home-main {
