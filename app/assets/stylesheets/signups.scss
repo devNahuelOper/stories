@@ -2,9 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.contact-main {
-  background: url("prague.jpg") no-repeat center center;
-  background-size: cover;
+.contact-main,
+.thanks-main {
   height: 700px;
   .content {
     position: relative;
@@ -16,8 +15,17 @@
     font-weight: 100;
     font-size: 50px;
     margin-bottom: 30px;
-    text-shadow: 0 2px 3px rgba(0,0,0,0.4);
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
   }
+}
+
+.contact-main {
+  background: url("prague.jpg") no-repeat center center;
+  background-size: cover;
+}
+.thanks-main {
+  background: url("prague1.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 form {
