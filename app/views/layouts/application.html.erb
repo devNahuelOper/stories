@@ -14,11 +14,35 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+   
     
   <body>
+    <div id="sidr" class="menu">
+      <ul>
+        <li>
+          <%# <a href="#">About</a> %>
+          <%= link_to "About", :about %>
+        </li>
+        <li>
+          <%# <a href="#">Home</a> %>
+          <%= link_to "Home", :root %>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      <img alt="Close" class="icon-close" src="https://content.codecademy.com/projects/z2d/stories/close-white.svg" width="24px"/>
+  </div>
     <%= yield %>
 
-   
+    <div class="footer">
+      <div class="container">
+        <p>
+          A Nahuel Gorosito Project
+        </p>
+      </div>
+    </div>
+
+     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>
