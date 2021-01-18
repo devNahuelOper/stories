@@ -40,14 +40,14 @@
   li {
     line-height: unset;
     border: none;
-    &:hover {
-      border-top: 1px solid #4d4d4d;
-      border-bottom: 1px solid #1a1a1a;
-      + li {
-        border-top: 1px solid #4d4d4d;
-        border-bottom: 1px solid #1a1a1a;
-      }
-    }
+    // &:hover {
+    //   border-top: 1px solid #4d4d4d;
+    //   border-bottom: 1px solid #1a1a1a;
+    //   + li {
+    //     border-top: 1px solid #4d4d4d;
+    //     border-bottom: 1px solid #1a1a1a;
+    //   }
+    // }
     a {
       color: #fff;
       display: block;
@@ -110,7 +110,7 @@
 }
 
 .home-supporting,
-.home-about {
+.home-about, .about-supporting {
   padding: 80px 0;
   text-align: center;
   h2 {
@@ -132,6 +132,25 @@
   &:hover {
     background-image: url("cuba1.jpg");
     // transition: 1s;
+  }
+}
+
+.about-main {
+  background-image: url("headshot.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  .content {
+    position: relative;
+    top: 150px;
+    text-align: center;
+  }
+  h1 {
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.4);
+    font-size: 50px;
   }
 }
 
