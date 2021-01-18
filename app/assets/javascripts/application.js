@@ -17,4 +17,9 @@
 
 $(document).ready(() => {
   $('#menu-toggle').sidr();
+  $('.icon-close').sidr();
+  $('body').click((e) => {
+    if (document.getElementById("sidr").contains(e.target)) return;
+    $.sidr('close', 'sidr');
+  });
 });
